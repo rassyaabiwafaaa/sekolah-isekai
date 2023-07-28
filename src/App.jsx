@@ -13,13 +13,12 @@ import { handleStudentDie } from "./utils/handleStudentDie";
 function App() {
   // state for store data from API
   const [data, setData] = useState([]);
-  const [studentDie, setStudentDie] = useState([]);
 
   // Functions for processing data and grouping students into classes
-  console.log(handleProcessData(classes, data));
+  handleProcessData(classes, data)
 
   // function to handle who student are getting marry
-  console.log(handleGetStudentsToMarry(classes));
+  handleGetStudentsToMarry(classes)
 
   // function to handle when student die if the student have primes number on their score
   console.log(handleStudentDie(classes));

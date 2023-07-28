@@ -9,8 +9,8 @@ export const handleStudentDie = (classes) => {
     const students = classes[className];
     for (const student of students) {
       const lastDigit = student.score % 10;
-      const deathMonth = lastDigit === currentMonth ? `akan meninggal di bulan ${months[lastDigit]} tahun ini` : `akan meninggal di bulan ${months[lastDigit]} di tahun depan`;
-      if (handlePrimes(student.score)) {
+      const deathMonth = lastDigit === currentMonth ? "bulan ini" : "tahun depan";
+      if (handlePrimes(student.score) && deathMonth === "bulan ini") {
         studentsToDie.push({ ...student, deathMonth });
       }
     }
