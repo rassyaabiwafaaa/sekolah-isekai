@@ -8,10 +8,12 @@ import { classes } from "./const/index";
 //import utils function
 import { handleProcessData } from "./utils/handleProcessData";
 import { handleGetStudentsToMarry } from "./utils/handleGetStudentsToMarry";
+import { handleStudentDie } from "./utils/handleStudentDie";
 
 function App() {
   // state for store data from API
   const [data, setData] = useState([]);
+  const [studentDie, setStudentDie] = useState([]);
 
   // Functions for processing data and grouping students into classes
   console.log(handleProcessData(classes, data));
@@ -20,6 +22,7 @@ function App() {
   console.log(handleGetStudentsToMarry(classes));
 
   // function to handle when student die if the student have primes number on their score
+  console.log(handleStudentDie(classes));
 
   // useEffect for getting data from API
   useEffect(() => {
