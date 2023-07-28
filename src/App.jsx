@@ -7,6 +7,7 @@ import { classes } from "./const/index";
 
 //import utils function
 import { handleProcessData } from "./utils/handleProcessData";
+import { handleGetStudentsToMarry } from "./utils/handleGetStudentsToMarry";
 
 function App() {
   // state for store data from API
@@ -14,6 +15,9 @@ function App() {
 
   // Functions for processing data and grouping students into classes
   console.log(handleProcessData(classes, data));
+
+  // function to handle who student are getting marry
+  console.log(handleGetStudentsToMarry(classes));
 
   // useEffect for getting data from API
   useEffect(() => {
