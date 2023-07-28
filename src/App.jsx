@@ -2,9 +2,18 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
 
+// import constanta
+import { classes } from "./const/index";
+
+//import utils function
+import { handleProcessData } from "./utils/handleProcessData";
+
 function App() {
   // state for store data from API
   const [data, setData] = useState([]);
+
+  // Functions for processing data and grouping students into classes
+  console.log(handleProcessData(classes, data));
 
   // useEffect for getting data from API
   useEffect(() => {
