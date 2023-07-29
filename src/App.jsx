@@ -9,16 +9,17 @@ import { classes } from "./const/index";
 import { handleProcessData } from "./utils/handleProcessData";
 import { handleGetStudentsToMarry } from "./utils/handleGetStudentsToMarry";
 import { handleStudentDie } from "./utils/handleStudentDie";
+import Router from "./routes/Router";
 
 function App() {
   // state for store data from API
   const [data, setData] = useState([]);
 
   // Functions for processing data and grouping students into classes
-  handleProcessData(classes, data)
+  handleProcessData(classes, data);
 
   // function to handle who student are getting marry
-  handleGetStudentsToMarry(classes)
+  handleGetStudentsToMarry(classes);
 
   // function to handle when student die if the student have primes number on their score
   console.log(handleStudentDie(classes));
@@ -49,7 +50,7 @@ function App() {
 
   return (
     <>
-      <h2>Sekolah Isekai</h2>
+      <Router />
     </>
   );
 }
