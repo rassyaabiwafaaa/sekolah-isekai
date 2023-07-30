@@ -3,7 +3,7 @@ import Notes from "../Notes";
 
 export default function CardStudentWillMarry({ data }) {
   return (
-    <div className="text-center mt-20">
+    <div className="text-center mt-20 pb-20">
       <div className="flex justify-center">
         <table className="text-sm text-left text-black w-[600px] h-[20px] overflow-y-auto">
           <thead className="text-xs uppercase bg-black text-white border border-white shadow">
