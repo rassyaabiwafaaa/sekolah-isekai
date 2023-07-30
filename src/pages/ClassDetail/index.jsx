@@ -18,7 +18,7 @@ export default function ClassDetail({ data }) {
         {/* title */}
         <HeaderPage
           title={`Class List`}
-          desc={`The data above is data from all students who have been distributed according to groups, the division of groups according to the number tens in the value, also special class is a class that students who have letter eiter 'O' or
+          desc={`The data are data from all students who have been distributed according to groups, the division of groups according to the number tens in the value, also special class is a class that students who have letter eiter 'O' or
               'C' and the score that is divisible by 7.`}
         />
 

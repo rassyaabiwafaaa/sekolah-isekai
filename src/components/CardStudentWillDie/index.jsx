@@ -3,7 +3,7 @@ import Notes from "../../components/Notes";
 
 export default function CardStudentWillDie({ data }) {
   return (
-    <div className="text-center min-h-[89.2vh]">
+    <div className="text-center mt-20">
       <div className="flex justify-center">
         <table className="text-sm text-left text-black w-[800px] h-[400px] overflow-x-auto">
           <thead className="text-xs uppercase bg-black text-white border border-white shadow">
@@ -40,12 +40,6 @@ export default function CardStudentWillDie({ data }) {
           </tbody>
         </table>
       </div>
-
-      {/* Notes */}
-      <Notes
-        notes="The data above is the data of students who will die this month. the data is taken from the value of students who get Examination Scores
-Primes"
-      />
     </div>
   );
 }
