@@ -22,7 +22,7 @@ function App() {
   handleGetStudentsToMarry(classes);
 
   // function to handle when student die if the student have primes number on their score
-  console.log(handleStudentDie(classes));
+  handleStudentDie(classes);
 
   // useEffect for getting data from API
   useEffect(() => {
@@ -50,7 +50,7 @@ function App() {
 
   return (
     <>
-      <Router />
+      <Router data={handleProcessData(classes, data)} studentDieData={handleStudentDie(classes)} studentMarryData={handleGetStudentsToMarry(classes)} />
     </>
   );
 }
