@@ -1,0 +1,1 @@
+export { default as HomePageBackground } from "homepageBackground.jpg";
