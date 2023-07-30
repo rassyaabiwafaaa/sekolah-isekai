@@ -3,7 +3,7 @@ import Notes from "../../components/Notes";
 
 export default function CardStudentWillDie({ data }) {
   return (
-    <div className="text-center">
+    <div className="text-center min-h-[89.2vh]">
       <div className="flex justify-center">
         <table className="text-sm text-left text-black w-[800px] h-[400px] overflow-x-auto">
           <thead className="text-xs uppercase bg-black text-white border border-white shadow">
