@@ -16,7 +16,7 @@ export default function ClassDetail({ data }) {
 
   return (
     <Layout>
-      <div className="bg-secondary px-10">
+      <div className="bg-secondary px-10 text-center">
         <div className="flex justify-between flex-wrap gap-16">
           <CardClassDetail data={kelas5} className={"Class 5"} />
           <CardClassDetail data={kelas6} className={"Class 6"} />
