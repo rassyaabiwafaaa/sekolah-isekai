@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../../components/Layout";
 import CardClassDetail from "../../components/CardClassDetail";
+import Notes from "../../components/Notes";
 
 export default function ClassDetail({ data }) {
   // Split data to state
@@ -24,6 +25,9 @@ export default function ClassDetail({ data }) {
           <CardClassDetail data={kelas9} className={"Class 9"} />
           <CardClassDetail data={kelasKhusus} className={"Special Class"} />
         </div>
+
+        {/* Notes */}
+        <Notes notes={"The data above is data from all students who have been distributed according to groups, the division of groups according to the number tens in the value."} />
       </div>
     </Layout>
   );
