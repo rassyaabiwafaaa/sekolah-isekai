@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
@@ -36,7 +36,7 @@ export default function Navbar() {
           Isescholl
         </Link>
 
-        {active === true ? <IoClose className="text-[24px] cursor-pointer" onClick={() => setActive((prev) => !prev)} /> : <GiHamburgerMenu className="text-[24px] cursor-pointer" onClick={() => setActive((prev) => !prev)} />}
+        {active === true ? <IoMdClose className="text-[24px] cursor-pointer" onClick={() => setActive((prev) => !prev)} /> : <GiHamburgerMenu className="text-[24px] cursor-pointer" onClick={() => setActive((prev) => !prev)} />}
       </div>
       <ul className={`flex-col gap-2 mt-4 md:hidden ${active === true ? "flex" : "hidden"}`}>
         <li>

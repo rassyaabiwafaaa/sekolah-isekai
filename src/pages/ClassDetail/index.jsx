@@ -11,13 +11,10 @@ export default function ClassDetail({ data }) {
   const [kelas8, setKelas8] = useState(data["Kelas 8"]);
   const [kelas9, setKelas9] = useState(data["Kelas 9"]);
   const [kelasKhusus, setKelasKhusus] = useState(data["Kelas Khusus"]);
-
-  console.log(kelasKhusus);
-
   return (
     <Layout>
       <div className="bg-secondary px-10 text-center">
-        <div className="flex justify-between flex-wrap gap-16">
+        <div className="flex justify-center md:justify-between flex-wrap gap-16">
           <CardClassDetail data={kelas5} className={"Class 5"} />
           <CardClassDetail data={kelas6} className={"Class 6"} />
           <CardClassDetail data={kelas7} className={"Class 7"} />
