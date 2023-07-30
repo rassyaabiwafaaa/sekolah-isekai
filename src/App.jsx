@@ -15,15 +15,6 @@ function App() {
   // state for store data from API
   const [data, setData] = useState([]);
 
-  // Functions for processing data and grouping students into classes
-  handleProcessData(classes, data);
-
-  // function to handle who student are getting marry
-  handleGetStudentsToMarry(classes);
-
-  // function to handle when student die if the student have primes number on their score
-  handleStudentDie(classes);
-
   // useEffect for getting data from API
   useEffect(() => {
     axios

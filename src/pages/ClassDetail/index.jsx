@@ -23,12 +23,12 @@ export default function ClassDetail({ data }) {
         />
 
         <div className="flex justify-center md:justify-between flex-wrap gap-16 mt-10">
-          {kelas5.length !== 0 ? <CardClassDetail data={kelas5} className={"Class 5"} /> : <span className="text-white text-center">Loading data...</span>}
-          {kelas6.length !== 0 ? <CardClassDetail data={kelas6} className={"Class 6"} /> : <span className="text-white text-center">Loading data...</span>}
-          {kelas7.length !== 0 ? <CardClassDetail data={kelas7} className={"Class 7"} /> : <span className="text-white text-center">Loading data...</span>}
-          {kelas8.length !== 0 ? <CardClassDetail data={kelas8} className={"Class 8"} /> : <span className="text-white text-center">Loading data...</span>}
-          {kelas9.length !== 0 ? <CardClassDetail data={kelas9} className={"Class 9"} /> : <span className="text-white text-center">Loading data...</span>}
-          {kelasKhusus.length !== 0 ? <CardClassDetail data={kelasKhusus} className={"Special Class"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas5.length !== 0 ? <CardClassDetail key={"kelas 5"} data={kelas5} className={"Class 5"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas6.length !== 0 ? <CardClassDetail key={"kelas 6"} data={kelas6} className={"Class 6"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas7.length !== 0 ? <CardClassDetail key={"kelas 7"} data={kelas7} className={"Class 7"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas8.length !== 0 ? <CardClassDetail key={"kelas 8"} data={kelas8} className={"Class 8"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas9.length !== 0 ? <CardClassDetail key={"kelas 9"} data={kelas9} className={"Class 9"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelasKhusus.length !== 0 ? <CardClassDetail key={"kelas khusus"} data={kelasKhusus} className={"Special Class"} /> : <span className="text-white text-center">Loading data...</span>}
         </div>
 
         {/* Notes */}

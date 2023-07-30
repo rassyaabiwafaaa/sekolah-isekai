@@ -4,7 +4,7 @@ import CardStudentWillMarry from "../../components/CardStudentWillMarry";
 import HeaderPage from "../../components/HeaderPage";
 
 export default function StudentWillMarry({ data }) {
-  console.log(data);
+
   return (
     <Layout>
       <div className="bg-secondary px-10 min-h-[89.2vh]">

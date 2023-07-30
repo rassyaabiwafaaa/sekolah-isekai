@@ -25,7 +25,7 @@ export default function CardStudentWillDie({ data }) {
           <tbody>
             {data.map((item, index) =>
               data.length !== 0 ? (
-                <tr className="bg-white border-b border-gray-700">
+                <tr className="bg-white border-b border-gray-700" key={index}>
                   <td className="px-6 py-4">{index + 1}</td>
                   <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                     {item.name}
