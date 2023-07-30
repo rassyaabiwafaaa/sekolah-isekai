@@ -26,7 +26,7 @@ export default function ClassDetail({ data }) {
           {kelas7.length !== 0 ? <CardClassDetail data={kelas7} className={"Class 7"} /> : <span className="text-white text-center">Loading data...</span>}
           {kelas8.length !== 0 ? <CardClassDetail data={kelas8} className={"Class 8"} /> : <span className="text-white text-center">Loading data...</span>}
           {kelas9.length !== 0 ? <CardClassDetail data={kelas9} className={"Class 9"} /> : <span className="text-white text-center">Loading data...</span>}
-          {kelasKhusus.length !== 0 ? <CardClassDetail data={kelasKhusus} className={"Class Khusus"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelasKhusus.length !== 0 ? <CardClassDetail data={kelasKhusus} className={"Special Class"} /> : <span className="text-white text-center">Loading data...</span>}
         </div>
 
         {/* Notes */}
