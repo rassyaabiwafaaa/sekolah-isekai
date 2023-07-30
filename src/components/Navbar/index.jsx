@@ -9,7 +9,7 @@ import { IoMdClose } from "react-icons/io";
 export default function Navbar() {
   const [active, setActive] = useState(false);
   return (
-    <nav className="font-sans flex flex-col text-left sm:flex-row sm:text-left sm:justify-between py-6 px-10 w-[100%] bg-secondary text-white">
+    <nav className="navigation font-sans flex flex-col text-left sm:flex-row sm:text-left sm:justify-between py-6 px-10 w-[100%] bg-secondary text-white">
       <div className="hidden md:block">
         <Link href="/" className="text-3xl font-bold text-primary">
           Isescholl
