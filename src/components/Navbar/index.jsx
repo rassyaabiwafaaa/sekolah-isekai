@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./index.css";
 
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io";
 
 export default function Navbar() {
+  const [active, setActive] = useState(false);
   return (
     <nav className="font-sans flex flex-col text-left sm:flex-row sm:text-left sm:justify-between py-6 px-10 w-[100%] bg-secondary text-white">
-      <div className="">
+      <div className="hidden md:block">
         <Link href="/" className="text-3xl font-bold text-primary">
           Isescholl
         </Link>
@@ -29,14 +31,14 @@ export default function Navbar() {
       </ul>
 
       {/* Responsive */}
-      <div>
+      <div className="flex items-center justify-between md:hidden">
         <Link href="/" className="text-3xl font-bold text-primary">
           Isescholl
         </Link>
 
-        <GiHamburgerMenu />
+        {active === true ? <IoClose className="text-[24px] cursor-pointer" onClick={() => setActive((prev) => !prev)} /> : <GiHamburgerMenu className="text-[24px] cursor-pointer" onClick={() => setActive((prev) => !prev)} />}
       </div>
-      <ul className="md:hidden sm:flex sm:flex-col sm:gap-10 py-3">
+      <ul className={`flex-col gap-2 mt-4 md:hidden ${active === true ? "flex" : "hidden"}`}>
         <li>
           <Link to={"/"}>Home</Link>
         </li>
