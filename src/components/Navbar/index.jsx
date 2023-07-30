@@ -13,6 +13,9 @@ export default function Navbar() {
       </div>
       <ul className="flex flex-col sm:flex-row justify-end sm:gap-10 w-full">
         <li>
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li>
           <Link to={"/class-detail"}>Classes</Link>
         </li>
         <li>
