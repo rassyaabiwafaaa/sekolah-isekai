@@ -13,7 +13,7 @@ export default function ClassDetail({ data }) {
   const [kelasKhusus, setKelasKhusus] = useState(data["Kelas Khusus"]);
   return (
     <Layout>
-      <div className="bg-secondary px-10 text-center">
+      <div className="bg-secondary px-10 text-center min-h-[89.2vh]">
         {/* title */}
         <div>
           <h1 className="text-white text-4xl font-bold">Class List</h1>
@@ -21,12 +21,12 @@ export default function ClassDetail({ data }) {
           <Notes notes={`scrollable table`} />
         </div>
         <div className="flex justify-center md:justify-between flex-wrap gap-16">
-          <CardClassDetail data={kelas5} className={"Class 5"} />
-          <CardClassDetail data={kelas6} className={"Class 6"} />
-          <CardClassDetail data={kelas7} className={"Class 7"} />
-          <CardClassDetail data={kelas8} className={"Class 8"} />
-          <CardClassDetail data={kelas9} className={"Class 9"} />
-          <CardClassDetail data={kelasKhusus} className={"Special Class"} />
+          {kelas5.length !== 0 ? <CardClassDetail data={kelas5} className={"Class 5"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas6.length !== 0 ? <CardClassDetail data={kelas6} className={"Class 6"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas7.length !== 0 ? <CardClassDetail data={kelas7} className={"Class 7"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas8.length !== 0 ? <CardClassDetail data={kelas8} className={"Class 8"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelas9.length !== 0 ? <CardClassDetail data={kelas9} className={"Class 9"} /> : <span className="text-white text-center">Loading data...</span>}
+          {kelasKhusus.length !== 0 ? <CardClassDetail data={kelasKhusus} className={"Class Khusus"} /> : <span className="text-white text-center">Loading data...</span>}
         </div>
 
         {/* Notes */}

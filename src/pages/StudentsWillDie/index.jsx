@@ -6,10 +6,10 @@ export default function StudentsWillDie({ data }) {
   console.log(data);
   return (
     <Layout>
-      <div className="bg-secondary px-10">
+      <div className="bg-secondary min-h-[89.2vh] px-10">
         <h1 className="text-white text-3xl font-bold text-center py-9">Students who will die this month</h1>
 
-        <CardStudentWillDie data={data} />
+        {data.length !== 0 ? <CardStudentWillDie data={data} /> : <span className="text-white text-center">Loading data...</span>}
       </div>
     </Layout>
   );

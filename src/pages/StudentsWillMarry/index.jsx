@@ -9,7 +9,7 @@ export default function StudentWillMarry({ data }) {
       <div className="bg-secondary px-10 min-h-[89.2vh]">
         <h1 className="text-white text-3xl font-bold text-center py-9">Students who will marry this month</h1>
 
-        <CardStudentWillMarry data={data} />
+        {data.length !== 0 ? <CardStudentWillMarry data={data} /> : <span className="text-white text-center">Loading data...</span>}
       </div>
     </Layout>
   );
