@@ -13,7 +13,7 @@ export default function Navbar() {
       </div>
       <ul className="flex flex-col sm:flex-row justify-end sm:gap-10 w-full">
         <li>
-          <Link to={"/classes"}>Classes</Link>
+          <Link to={"/class-detail"}>Classes</Link>
         </li>
         <li>
           <Link to={"/student-will-die"}>Student Who Will Die</Link>
