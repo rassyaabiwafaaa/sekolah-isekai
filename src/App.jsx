@@ -27,7 +27,7 @@ function App() {
   // useEffect for getting data from API
   useEffect(() => {
     axios
-      .get("http://ecocim-backend-theone.beit.co.id/api/ManualConfig/TestBEIT")
+      .get(`https://ecocim-backend-theone.beit.co.id/api/ManualConfig/TestBEIT/`)
       .then((response) => {
         // Handle success (response data will be in 'response.data')
 
