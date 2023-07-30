@@ -31,7 +31,7 @@ export default function CardStudentWillMarry({ data }) {
                     {item.name}
                   </th>
                   <td className="px-6 py-4">{item.score}</td>
-                  <td className="px-6 py-4">This student will marry this month</td>
+                  <td className="px-6 py-4">This student will marry next year</td>
                 </tr>
               ) : (
                 <span className="text-white">Data loading or data is not exist</span>
