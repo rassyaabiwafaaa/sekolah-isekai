@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Layout from "../../components/Layout";
 import CardClassDetail from "../../components/CardClassDetail";
 import Notes from "../../components/Notes";
+import HeaderPage from "../../components/HeaderPage";
 
 export default function ClassDetail({ data }) {
   // Split data to state
@@ -15,12 +16,13 @@ export default function ClassDetail({ data }) {
     <Layout>
       <div className="bg-secondary px-10 text-center min-h-[89.2vh]">
         {/* title */}
-        <div>
-          <h1 className="text-white text-4xl font-bold">Class List</h1>
-          <p className="text-white mt-5">Below are datas from all classes that have been grouped according to class</p>
-          <Notes notes={`scrollable table`} />
-        </div>
-        <div className="flex justify-center md:justify-between flex-wrap gap-16">
+        <HeaderPage
+          title={`Class List`}
+          desc={`The data above is data from all students who have been distributed according to groups, the division of groups according to the number tens in the value, also special class is a class that students who have letter eiter 'O' or
+              'C' and the score that is divisible by 7.`}
+        />
+
+        <div className="flex justify-center md:justify-between flex-wrap gap-16 mt-10">
           {kelas5.length !== 0 ? <CardClassDetail data={kelas5} className={"Class 5"} /> : <span className="text-white text-center">Loading data...</span>}
           {kelas6.length !== 0 ? <CardClassDetail data={kelas6} className={"Class 6"} /> : <span className="text-white text-center">Loading data...</span>}
           {kelas7.length !== 0 ? <CardClassDetail data={kelas7} className={"Class 7"} /> : <span className="text-white text-center">Loading data...</span>}
@@ -30,11 +32,7 @@ export default function ClassDetail({ data }) {
         </div>
 
         {/* Notes */}
-        <Notes
-          notes={
-            "The data above is data from all students who have been distributed according to groups, the division of groups according to the number tens in the value, also special class is a class that students who have letter eiter 'O' or 'C' and the score that is divisible by 7."
-          }
-        />
+        <Notes notes={"scrollable table"} />
       </div>
     </Layout>
   );
